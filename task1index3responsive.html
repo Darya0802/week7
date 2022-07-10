@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+
+            color: black;
+            font-weight: bold;
+            font-size: 24px;
+            background-color: rgb(216, 210, 210);
+            text-align: center;
+
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-rows: 15% 70% 15%;
+            height: 100vh;
+            width: 100vw;
+            text-align: center;
+        }
+
+
+        header {
+            display: grid;
+            grid-column-start: 1;
+            grid-column-end: 5;
+            text-align: center;
+        }
+
+        main {
+            background-color: rgb(236, 213, 178);
+            grid-column: 1/4;
+        }
+
+        .sec123 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            padding: 50px;
+        }
+
+        #sec1 {
+            background-color: bisque;
+            height: 200px;
+        }
+
+        #sec2 {
+            background-color: bisque;
+
+            height: 200px;
+        }
+
+        #sec3 {
+            margin: 0px 50px 0px 50px;
+            height: 300px;
+            background-color: bisque;
+
+        }
+
+        aside {
+            background-color: lightgreen;
+        }
+
+        #piccontainer {
+            width: 80%;
+        }
+
+        .pic {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .footer {
+            display: grid;
+            grid-column-start: 1;
+            grid-column-end: 5;
+            text-align: center;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            background-color: rgb(216, 210, 210);
+            font-size: 2em;
+        }
+
+        #foot1,
+        #foot2,
+        #foot3,
+        #foot4 {
+            background-color: khaki;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <header>[Шапка страницы]</header>
+        <main>[Основная часть]
+            <div class="sec123">
+                <section id="sec1">[Еще 1]</section>
+                <section id="sec2">[Еще 2]</section>
+            </div>
+            <section id="sec3">[Еще 3]</section>
+
+        </main>
+        <aside>[Боковая область] <div id="piccontainer"><img class="pic" src="2053604.png" alt="cat"></div>
+        </aside>
+        <div class="footer">
+            <section id="foot1">[Секция футера 1]</section>
+            <section id="foot2">[Секция футера 2]</section>
+            <section id="foot3">[Секция футера 3]</section>
+            <section id="foot4">[Секция футера 4]</section>
+        </div>
+    </div>
+</body>
+
+</html>
